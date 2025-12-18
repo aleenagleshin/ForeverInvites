@@ -28,7 +28,7 @@ export const Navbar = () => {
             <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
               <Sparkles className="w-5 h-5 text-primary" />
             </div>
-            <span className="font-display text-xl font-semibold">ForeverInvites</span>
+            <span className="font-display text-xl font-semibold">Forever Invites</span>
           </a>
 
           {/* Desktop Links */}
@@ -46,9 +46,7 @@ export const Navbar = () => {
 
           {/* CTA */}
           <div className="hidden md:block">
-            <Button variant="gold" size="sm">
-              Get Started
-            </Button>
+          
           </div>
 
           {/* Mobile Menu Button */}

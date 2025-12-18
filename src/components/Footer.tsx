@@ -11,7 +11,7 @@ export const Footer = () => {
               <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
                 <Sparkles className="w-5 h-5 text-primary" />
               </div>
-              <span className="font-display text-xl font-semibold">ForeverInvites</span>
+              <span className="font-display text-xl font-semibold">Forever Invites</span>
             </a>
             <p className="text-muted-foreground text-sm max-w-xs">
               Creating beautiful digital invitations for life's special moments. 
@@ -55,7 +55,7 @@ export const Footer = () => {
 
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2024 ForeverInvites. All rights reserved.
+            © 2024 Forever Invites. All rights reserved.
           </p>
          
         </div>

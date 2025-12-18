@@ -9,6 +9,9 @@ import sampleWedding from "@/assets/sample-wedding.jpg";
 import sampleBirthday from "@/assets/sample-birthday.jpg";
 import sampleHousewarming from "@/assets/sample-housewarming.jpg";
 import sampleCorporate from "@/assets/sample-corporate.jpg";
+import safnajan from "@/assets/safnajan.jpg";
+import AbhiAmal from "@/assets/AbhiAmal.jpg";
+
 
 export type SampleType =
   | "wedding"
@@ -19,15 +22,15 @@ export type SampleType =
 /* 🌐 Featured Live Websites */
 const featuredWebsites = [
   {
-    title: "Safna Wedding Website",
+    title: "Safna Weds Jan",
     description: "Live wedding invitation website with RSVP & gallery",
-    image: sampleWedding,
+    image: safnajan,
     url: "https://safna-wedding-website.vercel.app/",
   },
   {
     title: "Abhirami Weds Amal",
     description: "Elegant wedding website with full event details",
-    image: sampleWedding,
+    image: AbhiAmal,
     url: "https://abhiramiwedsamal.vercel.app/",
   },
 ];
