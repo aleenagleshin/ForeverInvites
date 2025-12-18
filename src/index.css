@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 40 6% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 40 6% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 40 6% 20%;
+    --primary: 40 70% 50%;
+    --primary-foreground: 0 0% 5%;
+    --secondary: 40 20% 90%;
+    --secondary-foreground: 40 6% 20%;
+    --muted: 40 10% 90%;
+    --muted-foreground: 40 6% 45%;
+    --accent: 40 70% 50%;
+    --accent-foreground: 0 0% 5%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 40 70% 50%;
+    --radius: 0.75rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 10% 6%;
+    --foreground: 40 20% 95%;
+    --card: 240 10% 9%;
+    --card-foreground: 40 20% 95%;
+    --popover: 240 10% 9%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 40 70% 55%;
+    --primary-foreground: 240 10% 6%;
+    --secondary: 240 8% 15%;
+    --secondary-foreground: 40 20% 95%;
+    --muted: 240 8% 15%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 40 70% 55%;
+    --accent-foreground: 240 10% 6%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 240 8% 18%;
+    --input: 240 8% 18%;
+    --ring: 40 70% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --gold: 40 70% 55%;
+    --gold-light: 40 60% 70%;
+    --gold-dark: 40 80% 40%;
+  }
+
+  /* Custom design tokens */
+  :root, .dark {
+    --gradient-gold: linear-gradient(135deg, hsl(40 70% 55%), hsl(35 80% 45%));
+    --gradient-dark: linear-gradient(180deg, hsl(240 10% 6%), hsl(240 10% 10%));
+    --gradient-card: linear-gradient(145deg, hsl(240 10% 12% / 0.8), hsl(240 10% 8% / 0.6));
+    --shadow-gold: 0 0 40px hsl(40 70% 55% / 0.15);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.3);
+    --glass-bg: hsl(240 10% 12% / 0.6);
+    --glass-border: hsl(40 70% 55% / 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground dark;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-gold);
+  }
+
+  .glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+  }
+
+  .gold-glow {
+    box-shadow: var(--shadow-gold);
+  }
+}
